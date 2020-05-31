@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+
+  <meta charset='utf-8'/>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <!-- All Material Design Bootstrap -->
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/edicsonabel/mdbootstrap/css/all.min.css'/>
+  <link rel='stylesheet' href='css/style.css'>
+  
+  <title>Paypal Calculator</title>
+</head>
+<body>
+
+  <nav class="mb-1 navbar navbar-dark fixed-top scrolling-navbar primary-color">
+    <div class="container">
+        <a class="navbar-brand" href="/">PayPalator</a>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="language" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-globe-americas"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                aria-labelledby="language">
+                <a id="langEN" class="dropdown-item">English</a>
+                <a id="langES" class="dropdown-item">Español</a>
+              </div>
+            </li>
+          </ul>
+    </div>
+  </nav>
+
+  <main class='calculator col-11 container d-flex justify-content-center align-items-center flex-column'>
+    <div class='row d-flex flex-column justify-content-center'>
+      <ul class='nav nav-pills mb-3 d-flex justify-content-center d-none' id='pills-tab' role='tablist'>
+        <li class='nav-item'>
+          <a class='nav-link' id='pills-receive-tab' data-toggle='pill' href='#pills-receive' role='tab'
+            aria-controls='pills-receive'></a>
+        </li>
+        <li class='nav-item'>
+          <a class='nav-link' id='pills-send-tab' data-toggle='pill' href='#pills-send' role='tab'
+            aria-controls='pills-send'></a>
+        </li>
+      </ul>
+
+      <select id='optCountry' class="browser-default custom-select d-none"></select>
+
+      <select id='optFee' class="browser-default custom-select d-none"></select>
+
+      <div id='txtPaypal' class='input-group mb-3 d-none'>
+        <div class='input-group-prepend'>
+          <span class='input-group-text' id='txtSymbol'></span>
+        </div>
+        <input type='text' placeholder="10.00" id='quantityPaypal' class='form-control' aria-label='Amount (to the nearest dollar)'/>
+      </div>
+
+      <div class='tab-content d-flex justify-content-center' id='pills-tabContent'>
+        <div class='tab-pane fade show w-100' id='pills-receive' role='tabpanel' aria-labelledby='pills-receive-tab'></div>
+        <div class='tab-pane fade show w-100' id='pills-send' role='tabpanel' aria-labelledby='pills-send-tab'></div>
+      </div>
+    </div>
+  </main>
+  <!-- All MDB core JavaScript -->
+  <script src='https://cdn.jsdelivr.net/gh/edicsonabel/mdbootstrap/js/all.min.js'></script>
+  <!-- <script src='../all.min.js'></script> -->
+  <script src='js/script.js'></script>
+</body>
+</html>
