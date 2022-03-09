@@ -1,0 +1,28 @@
+{
+  "name": "paypalator",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "PayPal calculator designed to find out the fees and commissions charged when making a transaction quickly and easily.",
+  "scripts": {
+    "start": "vite --host",
+    "build": "vite build",
+    "build:base": "vite build --base=/paypalator/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "sass": "^1.49.9",
+    "standard": "^16.0.4",
+    "vite": "^2.8.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json",
+    "rules": {
+      "arrow-parens": [
+        "error",
+        "as-needed"
+      ]
+    }
+  }
+}

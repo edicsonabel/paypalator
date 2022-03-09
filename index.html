@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
+  <meta charset='utf-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
 
-  <meta charset='utf-8'/>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
-  <meta name='viewport' content='width=device-width, initial-scale=1'/>
-  <!-- All Material Design Bootstrap -->
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/edicsonabel/mdbootstrap/css/all.min.css'/>
-  <link rel='stylesheet' href='css/style.css'>
-  
   <title>PayPal Calculator</title>
-</head>
-<body>
+  <meta name='twitter:title' content='PayPal Calculator' />
+  <meta name='description' property='og:description'
+    content='PayPal calculator designed to find out the fees and commissions charged when making a transaction quickly and easily.' />
+  <meta name='twitter:description'
+    content='PayPal calculator designed to find out the fees and commissions charged when making a transaction quickly and easily.' />
+  <meta name='image' property='og:image'
+    content='https://cdn.jsdelivr.net/gh/edicsonabel/paypalator/src/assets/img/og-image.png' />
+  <meta name='twitter:image' content='https://cdn.jsdelivr.net/gh/edicsonabel/paypalator/src/assets/img/og-image.png' />
+  <meta name='twitter:card' content='summary_large_image' />
+  <meta name="author" content="Edicson Abel">
+  <meta name='twitter:creator' content='@edicsonabel_' />
+  <meta name='twitter:site' content='@edicsonabel_' />
+  <meta property='og:type' content='site' />
 
-  <nav class="mb-1 navbar navbar-dark fixed-top scrolling-navbar primary-color">
-    <div class="container">
-        <a class="navbar-brand" href="./">PayPal Calculator</a>
-          <ul class="navbar-nav ml-auto nav-flex-icons">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="language" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-globe-americas"></i>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right dropdown-default"
-                aria-labelledby="language">
-                <a id="langEN" class="dropdown-item">English</a>
-                <a id="langES" class="dropdown-item">Español</a>
-              </div>
-            </li>
-          </ul>
+  <link rel=' icon' href='/src/assets/img/favicon.ico' />
+  <!-- All Material Design Bootstrap -->
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/edicsonabel/mdbootstrap/css/all.min.css' />
+  <link rel='stylesheet' lang='sass' href='/src/styles/index.sass'>
+  <script defer type='module' src='/src/main.js'></script>
+</head>
+
+<body>
+  <nav class='mb-1 navbar navbar-dark fixed-top scrolling-navbar primary-color'>
+    <div class='container'>
+      <a class='navbar-brand' href='./'>PayPal Calculator</a>
+      <ul class='navbar-nav ml-auto nav-flex-icons'>
+        <li class='nav-item dropdown'>
+          <a class='nav-link dropdown-toggle' id='language' data-toggle='dropdown' aria-haspopup='true'
+            aria-expanded='false'>
+            <i class='fas fa-globe-americas'></i>
+          </a>
+          <div class='dropdown-menu dropdown-menu-right dropdown-default' aria-labelledby='language'>
+            <a id='langEN' class='dropdown-item'>English</a>
+            <a id='langES' class='dropdown-item'>Español</a>
+          </div>
+        </li>
+      </ul>
     </div>
   </nav>
 
@@ -45,25 +60,27 @@
         </li>
       </ul>
 
-      <select id='optCountry' class="browser-default custom-select d-none"></select>
+      <select id='optCountry' class='browser-default custom-select d-none'></select>
 
-      <select id='optFee' class="browser-default custom-select d-none"></select>
+      <select id='optFee' class='browser-default custom-select d-none'></select>
 
       <div id='txtPaypal' class='input-group mb-3 d-none'>
         <div class='input-group-prepend'>
           <span class='input-group-text' id='txtSymbol'></span>
         </div>
-        <input type='text' placeholder="10.00" id='quantityPaypal' class='form-control' aria-label='Amount (to the nearest dollar)'/>
+        <input type='text' placeholder='10.00' id='quantityPaypal' class='form-control'
+          aria-label='Amount (to the nearest dollar)' />
       </div>
 
       <div class='tab-content d-flex justify-content-center' id='pills-tabContent'>
-        <div class='tab-pane fade show w-100' id='pills-receive' role='tabpanel' aria-labelledby='pills-receive-tab'></div>
+        <div class='tab-pane fade show w-100' id='pills-receive' role='tabpanel' aria-labelledby='pills-receive-tab'>
+        </div>
         <div class='tab-pane fade show w-100' id='pills-send' role='tabpanel' aria-labelledby='pills-send-tab'></div>
       </div>
     </div>
   </main>
   <!-- All MDB core JavaScript -->
   <script src='https://cdn.jsdelivr.net/gh/edicsonabel/mdbootstrap/js/all.min.js'></script>
-  <script src='js/script.js'></script>
 </body>
+
 </html>
