@@ -23,8 +23,8 @@
   <meta name='twitter:description'
     content='PayPal calculator designed to find out the fees and commissions charged when making a transaction quickly and easily.' />
   <meta name='image' property='og:image'
-    content='https://cdn.jsdelivr.net/gh/edicsonabel/paypalator/src/assets/img/og-image.png' />
-  <meta name='twitter:image' content='https://cdn.jsdelivr.net/gh/edicsonabel/paypalator/src/assets/img/og-image.png' />
+    content='/img/og-image.png' />
+  <meta name='twitter:image' content='/img/og-image.png' />
   <meta name='twitter:card' content='summary_large_image' />
   <meta name="author" content="Edicson Abel">
   <meta name='twitter:creator' content='@edicsonabel_' />
@@ -33,15 +33,19 @@
 
   <link rel=' icon' href='/src/assets/img/favicon.ico' />
   <!-- All Material Design Bootstrap -->
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/edicsonabel/mdbootstrap/css/all.min.css' />
+  <link rel='stylesheet' href='/mdbootstrap/css/all.min.css' />
   <link rel='stylesheet' lang='sass' href='/src/styles/index.sass'>
+
+  <!-- All MDB core JavaScript -->
+ <script src='/mdbootstrap/js/all.min.js'></script> 
+  
   <script defer type='module' src='/src/main.js'></script>
 </head>
 
 <body>
   <nav class='mb-1 navbar navbar-dark fixed-top scrolling-navbar primary-color'>
     <div class='container'>
-      <a class='navbar-brand' href='./'>PayPal Calculator</a>
+      <a class='navbar-brand' href='/'>PayPal Calculator</a>
       <ul class='navbar-nav ml-auto nav-flex-icons'>
         <li class='nav-item dropdown'>
           <a class='nav-link dropdown-toggle' id='language' data-toggle='dropdown' aria-haspopup='true'
@@ -89,8 +93,7 @@
       </div>
     </div>
   </main>
-  <!-- All MDB core JavaScript -->
-  <script src='https://cdn.jsdelivr.net/gh/edicsonabel/mdbootstrap/js/all.min.js'></script>
+
 </body>
 
 </html>
